@@ -1,0 +1,12 @@
+{
+    "name": "neok/telegram-bot-sdk",
+    "description": "Telegram bot sdk and symfony bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "neok",
+            "email": "p.popelyshko@gmail.com"
+        }
+    ],
+    "require": {}
+}
