@@ -7,8 +7,9 @@ use Neok\Telegram\HttpClient\HttpClientInterface;
 
 class Api
 {
+    /** @var HttpClientInterface */
     protected $client;
-
+    /** @var string */
     protected $accessToken;
 
     public function __construct(string $accessToken, ?HttpClientInterface $client)
@@ -20,6 +21,13 @@ class Api
         $this->client = $client;
     }
 
+    public function getClient(): HttpClientInterface
+    {
+        return $this->client;
+    }
 
+    public function getAccessToken(): string
+    {
+        return $this->accessToken;
+    }
 }
-
